@@ -22,5 +22,5 @@ with open("sales_data.csv", newline='') as csvFile:
         delivery_date = string_to_date(delivery_date)
 
         lead_time = delivery_date-order_date
-        print(f"{order_num} has {lead_time}")
+        print(f"{order_num} has {lead_time.days} leap days")
 
