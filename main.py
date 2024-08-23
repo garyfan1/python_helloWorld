@@ -1,4 +1,3 @@
-# some dummy text here
 import csv
 from datetime import datetime
 
@@ -12,7 +11,6 @@ def string_to_date(date_string: str) -> datetime:
 
 with open("sales_data.csv", newline='') as csvFile:
     reader = csv.DictReader(csvFile)
-    i = 1
 
     for order in reader:
         order_num = order["OrderNumber"]
